@@ -36,4 +36,25 @@ Smart Resource Connect advocates for an open standard for describing surplus res
   "status": "string",
   "postedAt": "string"
 }
-``` 
+```
+
+## User Schema
+
+```json
+{
+  "id": "string",
+  "email": "string",
+  "role": "string (admin, provider, requester)",
+  "createdAt": "string"
+}
+```
+
+## Relationships
+
+- **Surplus** → belongs to a user (provider)
+- **Demand** → belongs to a user (requester)
+
+## Indexing Strategies
+
+- **Category and Location**: For faster matching/filtering.
+- **Status**: Quickly exclude closed or fulfilled entries. 

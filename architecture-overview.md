@@ -11,3 +11,8 @@ Smart Resource Connect utilizes a modern, cloud-based architecture designed for 
 - **HTTP Client:** Axios
 - **Backend Database & Authentication:** Supabase
 - **CDN and Security:** Cloudflare 
+
+## Matching Algorithm Implementation
+
+- **Option A**: SQL function in Supabase for filtering, scoring, and ordering.
+- **Option B**: Serverless function (Node/TypeScript) to compute scores and return top matches. 
